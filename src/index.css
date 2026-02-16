@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 10% 8%;
+    --foreground: 40 20% 90%;
+
+    --card: 20 10% 12%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 20 10% 12%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 38 70% 50%;
+    --primary-foreground: 20 10% 8%;
+
+    --secondary: 20 8% 18%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 20 8% 16%;
+    --muted-foreground: 30 10% 55%;
+
+    --accent: 38 70% 50%;
+    --accent-foreground: 20 10% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 38 70% 50%;
+
+    --radius: 0.25rem;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Raleway', sans-serif;
+
+    --gold-glow: 0 0 30px hsl(38 70% 50% / 0.3);
+
+    --sidebar-background: 20 10% 10%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 38 70% 50%;
+    --sidebar-primary-foreground: 20 10% 8%;
+    --sidebar-accent: 20 8% 18%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 10% 20%;
+    --sidebar-ring: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
